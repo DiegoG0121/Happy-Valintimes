@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+body {
+    background-color: rgb(255, 212, 219);
+    font-family: 'Sofia';
+}
+
+header > h1 {
+    text-align: center;
+    text-shadow: 0px 0px 15px white;
+    margin-top: 20px;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.img-decoration .childhood {
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    transform: rotate(25deg);
+}
+
+.img-decoration .ribbon-dec {
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(25deg);
+    top: 0;
+    left: -10px;
+}
+
+.img-decoration .pink-rose {
+    width: 150px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: -50px;
+    left: 200px;
+}
+
+.img-decoration {
+    .one {
+        left: 270px;
+        
+        transform: scaleX(-1);
+        transform: rotate(90deg);
+    }
+    .two {
+        left: 950px;
+        z-index: 1;
+    }
+
+    .my-gf-pic {
+        height: 300px;
+        position: absolute;
+        top: -82px;
+        right: 50px;
+        border-radius: 50px;
+        box-shadow: 0 0 50px white;
+        transform: rotate(90deg);
+    }
+
+    p {
+        position: absolute;
+        right: 10px;
+        background-color: aliceblue;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+
+        transition: all allow-discrete 0.3s;
+    }
+
+    h1 {
+        display: none;
+        position: absolute;
+        width: 500px;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        z-index: 3;
+        background-color: black;
+        color: pink;
+        box-shadow: 0 0 10px pink;
+        padding: 40px;
+        border-radius: 20px;
+        word-spacing: 5px;
+    }
+
+    p:hover {
+        background-color: black;
+        color: pink;
+        z-index: 2;
+    }
+
+    div:hover h1 {
+        display: block;
+        top: 50%;
+        left: 50%;
+    } 
+}
+
+.from-me-to-you {
+    display: grid;
+    margin: 100px 0px 0px 280px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "   history         school       ."
+    "   what-I-love       side       ."
+    "   .       .       ."
+    ;
+
+    .history-love {
+        width: 300px;
+        grid-area: history;
+        background-color: aliceblue;
+        padding: 15px;
+
+        h1 {
+            font-weight: bold;
+        }
+
+        p {
+            padding: 20px;
+        }
+    }
+
+    .school-img {
+        width: 500px;
+        grid-area: school;
+    }
+
+    .what-I-love {
+        grid-area: what-I-love;
+        background-color: aliceblue;
+
+        h1{
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 20px;
+            transition: all allow-discrete 1s;
+
+            li {
+                padding: 10px;
+
+                .I-love-hidden {
+                    display: none;
+                    grid-area: side;
+                    position: absolute;
+                    padding: 35px;
+                    background-color: black;
+                    border-radius: 20px;
+                    box-shadow: 0 0 20px white;
+                }
+
+                img[alt="Eye"] {
+                    width: 400px;
+                    right: 250px;
+                }
+
+                img[alt="Lips"] {
+                    width: 200px;
+                }
+
+                img[alt='Smile'] {
+                    width: 200px;
+                }
+            }
+
+            li:hover {
+                background-color: black;
+                color: pink;
+            }
+        }
+    }
+}
+
+.what-I-love ul > li:hover > .I-love-hidden {
+    display: block;
+    top: 800px;
+    right: 300px;
+}
+
+
+
+
+
+
