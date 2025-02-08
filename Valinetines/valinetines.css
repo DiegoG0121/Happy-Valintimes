@@ -106,7 +106,7 @@ header > h1 {
 
 .from-me-to-you {
     display: grid;
-    margin: 100px 0px 0px 280px;
+    margin: 110px 0px 0px 340px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
@@ -157,24 +157,73 @@ header > h1 {
                     display: none;
                     grid-area: side;
                     position: absolute;
-                    padding: 35px;
-                    background-color: black;
+                    box-shadow: 0 0 400px pink;
                     border-radius: 20px;
-                    box-shadow: 0 0 20px white;
                 }
 
                 img[alt="Eye"] {
-                    width: 400px;
-                    right: 250px;
+                    width: 250px;
+                    right: 340px;
+                    top: 930px;
                 }
 
                 img[alt="Lips"] {
                     width: 200px;
+                    top: 880px;
+                    right: 340px;
+                }
+
+                img[alt='Currly-Hair'] {
+                    width: 350px;
+                    top: 990px;
+                    right: 285px;
                 }
 
                 img[alt='Smile'] {
                     width: 200px;
+                    top: 890px;
+                    right: 350px;
                 }
+
+                img[alt='white-precious-skin'] {
+                    width: 200px;
+                    top: 860px;
+                    right: 350px;
+                }
+
+                img[alt='cherry'] {
+                    width: 200px;
+                    top: 880px;
+                    right: 350px;
+                }
+
+                p[title='melon'] {
+                    width: 200px;
+                    top: 1020px;
+                    right: 340px;
+                    background-color: black;
+                    padding: 20px;
+                }
+
+                img[alt='toes'] {
+                    width: 300px;
+                    top: 950px;
+                    right: 310px;
+                }
+
+                img[alt='cheeks'] {
+                    width: 200px;
+                    top: 900px;
+                    right: 350px;
+                }
+
+                ul[title='my-beautiful-gf'] {
+                    width: 300px;
+                    top: 840px;
+                    right: 2900px;
+                    background-color: rgba(0, 0, 0, 0.696);
+                }
+
             }
 
             li:hover {
@@ -188,7 +237,20 @@ header > h1 {
         background-color: aliceblue;
         grid-area: decor;
         width: 500px;
-        height: 500px;
+        height: 600px;
+
+        .pink-rose-string-bottum {
+            position: relative;
+            width: 500px;
+            top: 180px;
+        }
+
+        .pink-rose-string-top{
+            position: relative;
+            width: 500px;
+            bottom: 428px;
+            transform: rotate(180deg);
+        }
     }
 }
 
@@ -198,8 +260,36 @@ header > h1 {
     right: 300px;
 }
 
+aside.whole-page-decor {
+    position: absolute;
+    top: 300px;
 
 
+    .flower-corel-1 {
+        width: 430px;
+    }
 
+    .us {
+        position: absolute;
+        width: 150px;
+        opacity: 0.9;
+        transform: rotate(45deg);
+        left: 0;
+    }
 
+    img[alt="us-2"] {
+        top: 280px;
+    }
 
+    img[alt="us-3"] {
+        top: 490px;
+    }
+
+    img[alt="us-4"] {
+        top: 620px;
+    }
+
+    img[alt="us-5"] {
+        top: 850px;
+    }
+}
