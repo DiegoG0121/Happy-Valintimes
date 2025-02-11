@@ -4,7 +4,6 @@
     
 }
 
-
 body {
     background-color: rgb(255, 212, 219);
     font-family: 'Sofia';
@@ -108,11 +107,10 @@ header > h1 {
     display: grid;
     margin: 110px 0px 0px 340px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
     "   history         school       ."
     "   what-I-love       decor       ."
-    "   .       .       ."
     ;
 
     .history-love {
@@ -222,6 +220,7 @@ header > h1 {
                     top: 840px;
                     right: 2900px;
                     background-color: rgba(0, 0, 0, 0.696);
+                    z-index: 5;
                 }
 
             }
@@ -272,9 +271,16 @@ aside.whole-page-decor {
     .us {
         position: absolute;
         width: 150px;
-        opacity: 0.9;
+        opacity: 0.5;
+
         transform: rotate(45deg);
         left: 0;
+
+        transition: all allow-discrete 0.6s;
+    }
+
+    .us:hover {
+        opacity: 1;
     }
 
     img[alt="us-2"] {
@@ -292,4 +298,95 @@ aside.whole-page-decor {
     img[alt="us-5"] {
         top: 850px;
     }
+}
+
+
+
+
+
+
+
+
+footer.will-you-be-my-valinetine {
+    
+    h1 {
+        background-color: black;
+        text-align: center;
+        color: pink;
+        padding: 30px 0 30px 0;
+        box-shadow: 5px 0px 50px white;
+    }
+
+    .be-my-valinetine {
+        display: flex;
+        width: 100%;
+
+        div {
+            width: 50%;
+
+            img {
+                width: 100%;
+                object-fit: fill;
+            }
+
+            div {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                z-index: 2;
+                bottom: 50%;
+                
+                h1 {
+                    text-align: center;
+                    width: fit-content;
+                    margin: 0 auto 0 auto;
+                    padding: 20px;
+                    background: transparent;
+                    border-radius: 400px;
+                    box-shadow: 0 0 400px white;
+                    font-size: 3rem;
+    
+                    transition: all allow-discrete 1s;
+                }
+
+                .hide-within {
+                    display: none;
+                    position: absolute;
+                    width: 400px;
+                    top: 250px;
+                    right: 470px;
+                    
+
+                    h1 {
+                        font-size: 1.5rem;
+                        box-shadow: none;
+                        background-color: rgba(255, 0, 0, 0.694);
+                        color: black;
+                        text-shadow: 0 0 10px white;
+                    }
+
+                    img {
+                        width: 150px;
+                        margin-top: 10px;
+                    }
+                }
+
+                .first {
+                    left: 500px;
+                    
+                    h1 {
+                        padding: 30px;
+                    }
+                }
+    
+                h1:hover {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.will-you-be-my-valinetine .be-my-valinetine > div > div:hover .hide-within {
+    display: block;
 }
